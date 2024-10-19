@@ -1,0 +1,8 @@
+Missing Number from Array
+class Solution:
+    def missingNumber(self, nums: List[int]) -> int:
+        l1 = [i for i in range(len(nums)+1)]
+        for i in nums:
+            if i in l1:
+                l1.remove(i)
+        return(l1[0])
