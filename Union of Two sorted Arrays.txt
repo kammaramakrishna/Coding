@@ -1,0 +1,10 @@
+Union of Two Sorted Arrays with Duplicate Elements
+
+class Solution:
+    
+    #Function to return a list containing the union of the two arrays.
+    def findUnion(self,a,b):
+        # code here 
+        res = a + b
+        s = list(sorted(set(res)))
+        return s
